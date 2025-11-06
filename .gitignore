@@ -41,11 +41,10 @@ env/
 .DS_Store
 Thumbs.db
 
-# Data files (optionally exclude large CSVs if needed)
-# Uncomment if you don't want to track generated data
-# data/raw/*.csv
-# data/processed/*.csv
-# data/processed/*.parquet
+# Data files (exclude generated data)
+data/raw/*.csv
+data/processed/*.csv
+data/processed/*.parquet
 
 # Environment variables
 .env

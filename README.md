@@ -261,6 +261,16 @@ Edit parameters in `src/data/generate_synthetic_data.py`:
 After setup, run this sequence to validate everything works:
 
 ```bash
+# Quick validation test
+python validate.py
+
+# If validation passes, you're ready to go!
+# Otherwise, follow the instructions to fix any issues.
+```
+
+Or run the full workflow manually:
+
+```bash
 # Generate data
 python -m src.data.generate_synthetic_data
 

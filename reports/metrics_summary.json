@@ -1,0 +1,84 @@
+{
+  "model_type": "Logistic Regression",
+  "features": [
+    "enrollment_rate",
+    "pupil_teacher_ratio",
+    "teacher_qualification_rate",
+    "household_poverty_rate",
+    "mother_education_years",
+    "household_size",
+    "internet_access_rate",
+    "textbook_availability_index",
+    "travel_time_to_school_min",
+    "electricity_access_rate"
+  ],
+  "train_size": 71040,
+  "test_size": 17760,
+  "metrics": {
+    "train_accuracy": 0.9574746621621621,
+    "test_accuracy": 0.9574887387387387,
+    "test_roc_auc": 0.7023791600055301
+  },
+  "confusion_matrix": [
+    [
+      0,
+      755
+    ],
+    [
+      0,
+      17005
+    ]
+  ],
+  "key_findings": [
+    {
+      "feature": "enrollment_rate",
+      "odds_ratio": 1.35537679453817,
+      "interpretation": "Each unit increase in enrollment_rate is associated with 35.5% higher odds of literacy"
+    },
+    {
+      "feature": "pupil_teacher_ratio",
+      "odds_ratio": 0.8720486792967139,
+      "interpretation": "Each unit increase in pupil_teacher_ratio is associated with 12.8% lower odds of literacy"
+    },
+    {
+      "feature": "teacher_qualification_rate",
+      "odds_ratio": 1.2111150588295783,
+      "interpretation": "Each unit increase in teacher_qualification_rate is associated with 21.1% higher odds of literacy"
+    },
+    {
+      "feature": "household_poverty_rate",
+      "odds_ratio": 0.77694445425793,
+      "interpretation": "Each unit increase in household_poverty_rate is associated with 22.3% lower odds of literacy"
+    },
+    {
+      "feature": "mother_education_years",
+      "odds_ratio": 1.3478260745268178,
+      "interpretation": "Each unit increase in mother_education_years is associated with 34.8% higher odds of literacy"
+    },
+    {
+      "feature": "household_size",
+      "odds_ratio": 0.9364920799808395,
+      "interpretation": "Each unit increase in household_size is associated with 6.4% lower odds of literacy"
+    },
+    {
+      "feature": "internet_access_rate",
+      "odds_ratio": 1.229612171264872,
+      "interpretation": "Each unit increase in internet_access_rate is associated with 23.0% higher odds of literacy"
+    },
+    {
+      "feature": "textbook_availability_index",
+      "odds_ratio": 1.3657916922754274,
+      "interpretation": "Each unit increase in textbook_availability_index is associated with 36.6% higher odds of literacy"
+    },
+    {
+      "feature": "travel_time_to_school_min",
+      "odds_ratio": 0.8386417711235945,
+      "interpretation": "Each unit increase in travel_time_to_school_min is associated with 16.1% lower odds of literacy"
+    },
+    {
+      "feature": "electricity_access_rate",
+      "odds_ratio": 1.2134167330143248,
+      "interpretation": "Each unit increase in electricity_access_rate is associated with 21.3% higher odds of literacy"
+    }
+  ]
+}
